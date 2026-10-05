@@ -4,6 +4,7 @@
 <title>repo-slim · VIOLINET Tech</title>
 <meta name="description" content="Stops build output from being committed alongside real source, which quietly grows .git into the hundreds of megabytes.">
 <meta property="og:title" content="repo-slim · VIOLINET Tech"><meta property="og:description" content="Stops build output from being committed alongside real source, which quietly grows .git into the hundreds of megabytes.">
+<meta property="og:image" content="https://violinet-tech.github.io/repo-slim/cover.webp"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
@@ -39,7 +40,7 @@ footer a{color:var(--orchid)}
 <p class="eyebrow">Agent skill</p>
 <h1>repo-slim</h1>
 <p class="lede">Keep a git repo from bloating</p>
-<div class="card"><p>Stops build output from being committed alongside real source, which quietly grows <code>.git</code> into the hundreds of megabytes. Adds the generated paths to <code>.gitignore</code>, untracks them, and checks that no hand-written file was caught in the same sweep. An optional second pass purges old bulky files from history with <code>git-filter-repo</code>, but it rewrites every commit hash and force-pushes, so it is off by default and always asks first.</p></div>
+<div class="card"><img class="cover" src="cover.webp" alt="A man in a suit sitting on an overstuffed suitcase to close it, beside a tidy carry-on bag." loading="lazy"><p>Stops build output from being committed alongside real source, which quietly grows <code>.git</code> into the hundreds of megabytes. Adds the generated paths to <code>.gitignore</code>, untracks them, and checks that no hand-written file was caught in the same sweep. An optional second pass purges old bulky files from history with <code>git-filter-repo</code>, but it rewrites every commit hash and force-pushes, so it is off by default and always asks first.</p></div>
 <div class="trig"><b>Use when:</b> a push warns about a large file, a repo's <code>.git</code> folder is unexpectedly huge, or every commit keeps re-adding the same build artifacts.</div>
 <h2>Install</h2>
 <div class="cmd"><span id="cmd">git clone https://github.com/Violinet-tech/repo-slim ~/.claude/skills/repo-slim</span><button type="button" onclick="navigator.clipboard.writeText(document.getElementById('cmd').textContent);this.textContent='Copied'">Copy</button></div>
